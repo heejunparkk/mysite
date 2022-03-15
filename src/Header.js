@@ -34,7 +34,7 @@ function Header() {
 
         <div className="header_optionBasket">
           <ShoppingBasketOutlined />
-          <span className="header_optionLineTwo_basket"> 장바구니</span>
+          <span className="header_optionLineTwo_basket"> 0</span>
         </div>
       </div>
     </div>
