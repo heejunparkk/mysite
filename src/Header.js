@@ -1,9 +1,12 @@
-import { Search, ShoppingBasketOutlined } from "@material-ui/icons";
 import React from "react";
 import { Link } from "react-router-dom";
+import { Search, ShoppingBasketOutlined } from "@material-ui/icons";
+import { useStateValue } from "./StateProvider";
 import "./Header.css";
 
 function Header() {
+  const [{ basket }, dispatch] = useStateValue();
+
   return (
     <div className="header">
       <Link to="/">

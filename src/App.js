@@ -1,7 +1,6 @@
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Checkout from "./Checkout";
-import Header from "./Header";
 import Home from "./Home";
 
 function App() {
