@@ -41,7 +41,10 @@ function Header() {
         <Link to="/checkout">
           <div className="header_optionBasket">
             <ShoppingBasketOutlined />
-            <span className="header_optionLineTwo_basket"> 0</span>
+            <span className="header_optionLineTwo_basket">
+              {" "}
+              {basket?.length}
+            </span>
           </div>
         </Link>
       </div>

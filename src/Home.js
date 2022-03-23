@@ -9,11 +9,7 @@ function Home() {
       <Header />
       <div className="home">
         <div className="home_container">
-          <img
-            className="home_img"
-            src="https://images.idgesg.net/images/article/2017/09/firetvad2-100736366-orig.jpg"
-            alt=""
-          />
+          <img className="home_img" src="/img/제목 없는 디자인.png" alt="" />
           <div className="home_row">
             <Product
               id="1"
