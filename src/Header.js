@@ -44,6 +44,7 @@ function Header() {
             <span className="header_optionLineTwo_basket">
               {" "}
               {basket?.length}
+              {/* 옵셔널 체이닝 - undefined로 반환하게하여 에러가안생기게 함 */}
             </span>
           </div>
         </Link>

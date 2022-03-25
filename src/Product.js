@@ -17,7 +17,6 @@ function Product({ id, title, price, rating, image }) {
       },
     });
   };
-  console.log("장바구니 확인", basket);
 
   return (
     <div className="product">
