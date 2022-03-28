@@ -2,6 +2,7 @@ export const initialState = {
   basket: [],
 };
 
+//요금 총액에대한 셀렉터
 export const getBasketTotal = (basket) =>
   basket?.reduce((amount, item) => item.price + amount, 0);
 

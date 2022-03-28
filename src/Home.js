@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import "./Home.css";
+import "./css/Home.css";
 import Product from "./Product";
 
 function Home() {
@@ -14,14 +14,14 @@ function Home() {
             <Product
               id="1"
               title="제품1"
-              price={"10,000"}
+              price={10000}
               image="/img/doodle mat - image 01 - 3.jpg"
               rating={5}
             />
             <Product
               id="2"
               title="제품2"
-              price={"10,000"}
+              price={5000}
               image="/img/doodle mat - image 05 - 2.jpg"
               rating={2}
             />
@@ -30,21 +30,21 @@ function Home() {
             <Product
               id="3"
               title="제품3"
-              price={"10,000"}
+              price={3000}
               image="/img/doodle mat - image 06 - 2.jpg"
               rating={3}
             />
             <Product
               id="4"
               title="제품4"
-              price={"10,000"}
+              price={20000}
               image="/img/doodle mat - image 07 - 2.jpg"
               rating={4}
             />
             <Product
               id="5"
               title="제품5"
-              price={"10,000"}
+              price={8000}
               image="/img/doodle mat - image 06 - 2.jpg"
               rating={5}
             />
@@ -53,7 +53,7 @@ function Home() {
             <Product
               id="6"
               title="제품6"
-              price={"10,000"}
+              price={2000}
               image="/img/doodle mat - image 05 - 2.jpg"
               rating={2}
             />
