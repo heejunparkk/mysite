@@ -25,7 +25,9 @@ function Header() {
       <div className="header_nav">
         <div className="header_option">
           <span className="header_optionLineOne"> 안녕하세요!!</span>
-          <span className="header_optionLineTwo"> Login</span>
+          <Link to="/login" className="homelogin">
+            <span className="header_optionLineTwo"> Login</span>
+          </Link>
         </div>
 
         <div className="header_option">
