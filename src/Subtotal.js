@@ -1,11 +1,13 @@
 import React from "react";
 import CurrencyFormat from "react-currency-format";
+import { useNavigate } from "react-router-dom";
 import { getBasketTotal } from "./Reducer";
 import { useStateValue } from "./StateProvider";
 import "./css/Subtotal.css";
 
 function Subtotal() {
   const [{ basket }, dispatch] = useStateValue();
+  const navigate = useNavigate();
 
   return (
     <div className="subtotal">
@@ -27,7 +29,7 @@ function Subtotal() {
         prefix={"₩"}
       />
 
-      <button>결제하기</button>
+      <button onClick={(e) => navigate("/payment")}>결제하기</button>
     </div>
   );
 }

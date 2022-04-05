@@ -1,5 +1,6 @@
 export const initialState = {
   basket: [],
+  user: null,
 };
 
 //요금 총액에대한 셀렉터
@@ -29,6 +30,12 @@ const reducer = (state, action) => {
 
     default:
       return state;
+
+    case "SET_USER":
+      return {
+        ...state,
+        user: action.user,
+      };
   }
 };
 
