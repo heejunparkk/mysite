@@ -14,10 +14,11 @@ function Payment() {
       <Header />
       <div className="payment">
         <div className="payment_container">
-          <Link to="/checkout">
-            <h1>장바구니로 돌아가기</h1>
+          <Link to="/checkout" className="checkoutlink">
+            <h1>
+              장바구니로 돌아가기 ({basket?.length} 개의 상품이 존재합니다.)
+            </h1>
           </Link>
-          <h1>({basket?.length} 개의 상품이 존재합니다.)</h1>
           <div className="payment_section">
             <div className="payment_title">
               <h3>배달 받을 곳</h3>
