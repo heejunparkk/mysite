@@ -32,7 +32,22 @@ function Payment() {
     getClientSecret();
   }, [basket]);
 
-  const handleSubmit = async (e) => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setProcessing(true);
+    const payload = await stripe
+      .confirmCardPayment(clientSecret, {
+        payment_method: {
+          card: elements.getElement(CardElement),
+        },
+      })
+      .then(({ paymentIntent }) => {
+        setSucceeded(true);
+        setError(null);
+        setProcessing("");
+        navigate("/orders");
+      });
+  };
 
   const handleChange = (e) => {
     setDisable(e.empty);
