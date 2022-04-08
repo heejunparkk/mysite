@@ -34,7 +34,7 @@ function Payment() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setProcessing(true);
+    setProcessing(true); //결제 처리중표시됨
     const payload = await stripe
       .confirmCardPayment(clientSecret, {
         payment_method: {
