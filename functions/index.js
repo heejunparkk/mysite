@@ -13,6 +13,11 @@ app.use(express.json());
 
 // 라우트부분
 app.get("/", (req, res) => res.status(200).send("안녕"));
+app.post("/payments/create", async (req, res) => {
+  const total = req.query.total;
+
+  console.log();
+});
 
 exports.api = functions.https.onRequest(app);
 

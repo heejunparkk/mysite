@@ -308,3 +308,69 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 }
 [debug] [2022-04-08T07:57:07.917Z] Building nodejs source
 [debug] [2022-04-08T07:57:07.917Z] Analyzing nodejs backend spec
+[debug] [2022-04-08T08:10:10.936Z] File /Users/heejunpark/Documents/mysite/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/heejunpark/Documents/mysite/functions/index.js changed, reloading triggers"}}
+[debug] [2022-04-08T08:10:11.938Z] Validating nodejs source
+[debug] [2022-04-08T08:10:12.569Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-08T08:10:12.569Z] Building nodejs source
+[debug] [2022-04-08T08:10:12.569Z] Analyzing nodejs backend spec
+[debug] [2022-04-09T01:05:28.353Z] File /Users/heejunpark/Documents/mysite/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/heejunpark/Documents/mysite/functions/index.js changed, reloading triggers"}}
+[debug] [2022-04-09T01:05:29.356Z] Validating nodejs source
+[debug] [2022-04-09T01:05:30.697Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "stripe": "^8.215.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-04-09T01:05:30.697Z] Building nodejs source
+[debug] [2022-04-09T01:05:30.698Z] Analyzing nodejs backend spec
