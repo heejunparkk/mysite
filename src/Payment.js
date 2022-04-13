@@ -8,6 +8,7 @@ import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./Reducer";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import axios from "axios";
+import { db } from "./firebase";
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -19,7 +20,7 @@ function Payment() {
   const [clientSecret, setClientSecret] = useState(true);
 
   const stripe = useStripe();
-  const elements = useElements(true);
+  const elements = useElements();
 
   useEffect(() => {
     const getClientSecret = async () => {
@@ -44,9 +45,24 @@ function Payment() {
         },
       })
       .then(({ paymentIntent }) => {
+        db.collection("users")
+          .doc(user?.uid)
+          .collection("oders")
+          .doc(paymentIntent.id)
+          .set({
+            basket: basket,
+            amount: paymentIntent.amount,
+            create: paymentIntent.created,
+          });
+
         setSucceeded(true);
         setError(null);
         setProcessing("");
+
+        dispatch({
+          type: "EMPTY_BAKET",
+        });
+
         navigate("/orders");
       });
   };
